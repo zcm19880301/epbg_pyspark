@@ -56,6 +56,7 @@ for rows in range(len(data_value)):
     point=LabeledPoint(point_label, point_value)
     data_labeled.append(point)
 print("样本信息如下(list形式)：")
+
 print(data_labeled)
 #list完成转化为Spark的dataframe
 data=spark.createDataFrame(data_labeled)
